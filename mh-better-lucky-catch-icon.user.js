@@ -11,7 +11,9 @@
 // @run-at      document-end
 // ==/UserScript==
 
-(() => {
+((function () {
+	'use strict';
+
 	const style = document.createElement('style');
 	style.innerHTML = `.journal .entry.luckycatchsuccess .journalimage:after {
 		background: url('https://www.mousehuntgame.com/images/ui/camp/trap/stat_luck.png?asset_cache_version=2');
@@ -33,4 +35,4 @@
 		margin: 0;
 	}`;
 	document.head.appendChild(style);
-})();
+})());
