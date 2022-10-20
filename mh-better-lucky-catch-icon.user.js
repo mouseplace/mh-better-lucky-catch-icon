@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         🐭️ MouseHunt - Better Lucky Catch Icon
-// @version      1.0.0
+// @version      1.0.1
 // @description  Upscales the Lucky Catch icon so it isn't so blurry.
 // @license      MIT
 // @author       bradp
