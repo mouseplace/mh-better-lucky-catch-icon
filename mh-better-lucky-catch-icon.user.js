@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         🐭️ MouseHunt - Better Lucky Catch Icon
-// @version      1.0.1
+// @version      1.1.0
 // @description  Upscales the Lucky Catch icon so it isn't so blurry.
 // @license      MIT
 // @author       bradp
@@ -24,14 +24,15 @@
 		top: -5px;
 		left: -5px;
 	}
+
 	.journaltext .lucky:after {
 		background: url('https://www.mousehuntgame.com/images/ui/camp/trap/stat_luck.png?asset_cache_version=2');
-		background-size: cover;
-		width: 20px;
-		height: 20px;
+		background-size: contain;
+		width: 15px;
+		height: 15px;
 		background-repeat: no-repeat;
 		position: relative;
-		top: 5px;
+		top: 3px;
 		margin: 0;
 	}`;
 	document.head.appendChild(style);
