@@ -1,4 +1,4 @@
-# mh-better-lucky-catch-icon
+# 🐭️ MouseHunt - Better Lucky Catch Icon
 
 A Userscript for [MouseHunt](https://mousehuntgame.com) to upscale the lucky catch icon so it isn't so blurry.
 
