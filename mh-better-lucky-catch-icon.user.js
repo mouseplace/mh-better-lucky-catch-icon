@@ -12,10 +12,10 @@
 // ==/UserScript==
 
 ((function () {
-	'use strict';
+  'use strict';
 
-	const style = document.createElement('style');
-	style.innerHTML = `.journal .entry.luckycatchsuccess .journalimage:after {
+  const style = document.createElement('style');
+  style.innerHTML = `.journal .entry.luckycatchsuccess .journalimage:after {
 		background: url('https://www.mousehuntgame.com/images/ui/camp/trap/stat_luck.png?asset_cache_version=2');
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -35,5 +35,5 @@
 		top: 3px;
 		margin: 0;
 	}`;
-	document.head.appendChild(style);
+  document.head.appendChild(style);
 })());
