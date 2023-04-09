@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         🐭️ MouseHunt - Better Lucky Catch Icon
-// @version      1.1.0
+// @version      1.1.1
 // @description  Upscales the Lucky Catch icon so it isn't so blurry.
 // @license      MIT
 // @author       bradp
@@ -15,25 +15,25 @@
   'use strict';
 
   const style = document.createElement('style');
-  style.innerHTML = `.journal .entry.luckycatchsuccess .journalimage:after {
-		background: url('https://www.mousehuntgame.com/images/ui/camp/trap/stat_luck.png?asset_cache_version=2');
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 20px;
-		width: 20px;
-		top: -5px;
-		left: -5px;
-	}
+  style.innerHTML = `.journal .entry.luckycatchsuccess .journalimage::after {
+    top: -5px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    background: url(https://www.mousehuntgame.com/images/ui/camp/trap/stat_luck.png?asset_cache_version=2);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-	.journaltext .lucky:after {
-		background: url('https://www.mousehuntgame.com/images/ui/camp/trap/stat_luck.png?asset_cache_version=2');
-		background-size: contain;
-		width: 15px;
-		height: 15px;
-		background-repeat: no-repeat;
-		position: relative;
-		top: 3px;
-		margin: 0;
-	}`;
+  .journaltext .lucky::after {
+    position: relative;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    background: url(https://www.mousehuntgame.com/images/ui/camp/trap/stat_luck.png?asset_cache_version=2);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }`;
   document.head.appendChild(style);
 })());
