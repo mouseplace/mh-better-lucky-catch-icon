@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         🐭️ MouseHunt - Better Lucky Catch Icon
-// @version      1.1.2
+// @version      1.2.0
 // @description  Upscales the Lucky Catch icon so it isn't so blurry.
 // @license      MIT
 // @author       bradp
@@ -8,7 +8,8 @@
 // @match        https://www.mousehuntgame.com/*
 // @icon         https://i.mouse.rip/mouse.png
 // @grant        none
-// @run-at      document-end
+// @run-at       document-end
+// @require      https://cdn.jsdelivr.net/npm/script-migration@1.1.1
 // ==/UserScript==
 
 ((function () {
@@ -36,4 +37,6 @@
     background-size: contain;
   }`;
   document.head.appendChild(style);
+
+  migrateUserscript('🐭️ MouseHunt - Better Lucky Catch Icon', 'https://greasyfork.org/en/scripts/449493-mousehunt-better-lucky-catch-icon');
 })());
